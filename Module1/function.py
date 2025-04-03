@@ -23,6 +23,11 @@ def resample_audio(sample,
     # возвращаем новые значения
     return {'array': array, 'sampling_rate': target_sr}
 
+
+# функция для извлечения mel-спектрограмм
+def extract_mel(sample):
+    pass
+
 # TODO
 # анализ данных:
 # --------------------------------
