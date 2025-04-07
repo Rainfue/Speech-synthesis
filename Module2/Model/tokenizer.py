@@ -22,7 +22,10 @@ class Tokenizer():
         except json.JSONDecodeError:
             print("Ошибка: Файлы повреждены. Удалите их и пересоздайте.")
             raise
-        
+
+    def getlen(self):
+        return len(self.text_to_ids_voc)
+
     # функция для предобработки текста
     @staticmethod
     def process_text(text: str) -> str:
